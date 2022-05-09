@@ -12,19 +12,19 @@ function Header() {
   return (
     <Container>
       <a href="/">
-        <img src="/images/logo.svg" alt="" />
+        <img src="/images/Icon.svg" alt=""  style={{height:60,width:30}}/>
       </a>
-      <Menu>
+      {/* <Menu>
         {cars &&
           cars.map((car, index) => (
             <a href="/" key={index}>
               {car}
             </a>
           ))}
-      </Menu>
+      </Menu> */}
       <RightMenu>
-        <a href="/">Shop</a>
-        <a href="/">Account</a>
+        {/* <a href="/">Shop</a>
+        <a href="/">Account</a> */}
         <CustomMenu
           onClick={() => {
             setBurgerStatus(true);
@@ -37,25 +37,25 @@ function Header() {
             setBurgerStatus(false);
           }}
         />
-        {cars &&
+        {/* {/* {cars &&
           cars.map((car, index) => (
             <li key={index}>
               <a href="/" key={index}>
                 {car}
               </a>
             </li>
-          ))}
+          ))} */}
         <li>
-          <a href="/">Existing Inventory</a>
+          <a href="/">Your Dev Team</a>
         </li>
         <li>
-          <a href="/">Used Inventory</a>
+          <a href="/">Case Studies</a>
         </li>
         <li>
-          <a href="/">Cybertruck</a>
+          <a href="/">Startup Resources</a>
         </li>
         <li>
-          <a href="/">Roadster</a>
+          <a href="/">Reach Us</a>
         </li>
       </BurgerNav>
     </Container>

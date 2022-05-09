@@ -1,25 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
+import DevSection from "./DevSection"
+import MVPSection from "./MVP";
+import CaseStudySection from "./CaseStudy";
+
 
 function Home() {
   return (
     <Container>
-      <Section
-        title="Model S"
-        description="Order Online for Touchless Delivery"
-        backgroundImage="model-s.jpg"
-        leftButtonText="Custom Order"
-        rightButtonText="Existing Inventory"
-        showDownArrow
+      <DevSection
+       title=" Your Dev Team"
+       // description="Order Online for Touchless Delivery"
+       backgroundImage="your-dev-background.jpeg"
+       leftButtonText="Custom Order"
+       rightButtonText="Existing Inventory"
+       showDownArrow
       />
-      <Section
-        title="Model Y"
-        description="Order Online for Touchless Delivery"
-        backgroundImage="model-y.jpg"
-        leftButtonText="Custom Order"
-        rightButtonText="Existing Inventory"
+      <MVPSection
+       title=" MVP in 2 Weeks"
+       // description="Order Online for Touchless Delivery"
+       backgroundImage="model-3.jpg"
+       showDownArrow
       />
+      <CaseStudySection
+      title="Case Studies"
+      description="Order Online for Touchless Delivery"
+      backgroundImage="model-3.jpg"
+      leftButtonText="Custom Order"
+      rightButtonText="Existing Inventory"
+       />
       <Section
         title="Model 3"
         description="Order Online for Touchless Delivery"
